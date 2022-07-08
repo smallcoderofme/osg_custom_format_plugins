@@ -6,7 +6,7 @@ project(${ProjName} VERSION 1.0.0)
 
 add_library(${ProjName} SHARED osgdb_tri.cpp)
 
-get_filename_component(PARENT_DIR ${CMAKE_CURRENT_SOURCE_DIR} DIRECTORY DIRECTORY)
+get_filename_component(PARENT_DIR ${CMAKE_CURRENT_SOURCE_DIR} DIRECTORY)
 get_filename_component(G_PARENT_DIR ${PARENT_DIR} DIRECTORY)
 
 set(GLOB_LIBS ${G_PARENT_DIR}/lib/)
